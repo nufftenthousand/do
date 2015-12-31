@@ -1,0 +1,12 @@
+<li>
+  <%= check_box_tag 'complete', '1', task.complete %>
+  <label><%= task.description %></label>
+  <% if task.project.present? %>
+    <br>
+    <strong>Project:</strong> <%= task.project %>
+  <% end %>
+  <% if task.tags.any? %>
+    <br>
+    <strong>Contexts:</strong> <%= task.tag_list %>
+  <% end %>
+</li>

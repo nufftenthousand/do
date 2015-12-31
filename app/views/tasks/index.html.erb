@@ -1,4 +1,20 @@
-<h1>Listing tasks</h1>
+<header>
+  <h1>DO</h1>
+</header>
+
+
+<div class="content">
+  <div class="list">
+    <ul>
+      <%= render partial: "task", collection: @tasks %>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<h2>Listing tasks</h2>
 
 <table>
   <thead>
