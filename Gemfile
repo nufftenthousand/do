@@ -39,3 +39,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'acts-as-taggable-on', '~> 3.4'
+
+gem 'bcrypt', '~> 3.1.10'
