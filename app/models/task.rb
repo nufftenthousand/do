@@ -1,6 +1,7 @@
 class Task < ActiveRecord::Base
+  belongs_to :user
   belongs_to :project
-  acts_as_taggable
+  acts_as_taggable_on :contexts
 
   after_initialize :default_values
 

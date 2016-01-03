@@ -5,8 +5,8 @@
     <br>
     <strong>Project:</strong> <%= task.project %>
   <% end %>
-  <% if task.tags.any? %>
+  <% if task.owner_tags_on(current_user,:contexts).any? %>
     <br>
-    <strong>Contexts:</strong> <%= task.tag_list %>
+    <strong>Contexts:</strong> <%= task.contexts_from(current_user) %>
   <% end %>
 </li>

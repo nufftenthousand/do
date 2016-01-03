@@ -1,0 +1,8 @@
+<h1>Listing contexts</h1>
+
+<ul>
+<% @contexts.each do |context| %>
+  <li><%= context.name %> | <%= context.taggings_count %></li>
+<% end %>
+</ul>
+
